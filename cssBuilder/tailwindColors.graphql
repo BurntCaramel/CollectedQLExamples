@@ -1,0 +1,18 @@
+query {
+  buildCSS {
+    colors(input: { tailwindCSSVersion: "1.0" }) {
+      backgroundClasses(prefix: "bg-") {
+        selector
+        rules {
+          property, value
+        }
+      }
+      textClasses(prefix: "text-") {
+        selector
+        rules {
+          property, value
+        }
+      }
+    }
+  }
+}
