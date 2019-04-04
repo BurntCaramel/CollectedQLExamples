@@ -1,0 +1,13 @@
+query {
+  buildCSS {
+    typography(input: { tailwindCSSVersion: "1.0" }, responsive: true) {
+      mediaQuery { raw }
+      sizeClasses(prefix: "text-") {
+        selector
+        rules {
+          property, value
+        }
+      }
+    }
+  }
+}
