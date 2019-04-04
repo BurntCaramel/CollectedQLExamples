@@ -1,6 +1,7 @@
 query {
   buildCSS {
-    colors(input: { tailwindCSSVersion: "1.0" }) {
+    colors(input: { tailwindCSSVersion: "1.0" }, responsive: true) {
+      mediaQuery { raw }
       backgroundClasses(prefix: "bg-") {
         selector
         rules {
